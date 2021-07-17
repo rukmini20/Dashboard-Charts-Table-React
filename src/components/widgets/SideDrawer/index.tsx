@@ -65,6 +65,7 @@ const SideDrawer: ForwardRefRenderFunction<SideDrawerProps, SideDrawerRefs> = (
                 } else {
                   handleLogout();
                 }
+                handleDrawerClose()
               }}
               button
               className={styles.sideDrawerIcon}
