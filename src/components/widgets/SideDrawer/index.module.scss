@@ -1,0 +1,31 @@
+@import "../../../styles/index.scss";
+
+.background {
+
+    :global(.MuiDrawer-root)    {
+        width: 600px;
+    }
+    .sideDrawerBackIcon {
+        :global(.MuiSvgIcon-root)   {
+            fill: $commonGrey;
+        }
+    }
+    .sideDrawerIcon {
+        :global(.MuiSvgIcon-root)   {
+            fill: $commonGrey;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+ .logoImage     {
+     margin: 20px 10px 40px 10px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+ .logoImage  g  {
+        width: 50px;
+        height: 50px;
+    }

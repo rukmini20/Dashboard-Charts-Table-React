@@ -1,0 +1,40 @@
+@import "../../../styles/index.scss";
+
+.background {
+  :global(.MuiInputBase-input) {
+    padding: 5px;
+  }
+
+  :global(.MuiFormLabel-root.Mui-focused) {
+    color: $buttonColor;
+  }
+  .inputBottomBorder {
+    border-bottom: 1px solid $buttonColor;
+  }
+  :global(.MuiInput-underline:after) {
+    @extend .inputBottomBorder;
+  }
+
+  :global(.MuiInput-underline:hover:not(.Mui-disabled):before) {
+    @extend .inputBottomBorder;
+  }
+}
+.errorTextFieldBackground {
+  :global(.MuiFormLabel-root.Mui-focused) {
+    color: $commonRed;
+  }
+  .inputBottomBorderError {
+    border-bottom: 1px solid $commonRed !important;
+  }
+  :global(.MuiInput-underline:after) {
+    @extend .inputBottomBorderError;
+  }
+
+  :global(.MuiInput-underline:hover:not(.Mui-disabled):before) {
+    @extend .inputBottomBorderError;
+  }
+  .errorText {
+    color: $commonRed;
+    font-size: 13px;
+  }
+}

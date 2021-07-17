@@ -1,0 +1,18 @@
+@import "../../../styles/index.scss";
+
+.background {
+    :global(.MuiFormControl-root)   {
+        border: 1px solid $commonGrey;
+    }
+    .textFieldIcon {
+        color: $commonGrey;
+         :global(.MuiSvgIcon-root) {
+            width: 20px;
+        }
+    }
+    .hideIcon   {
+        :global(.MuiSvgIcon-root) {
+            display: none;
+        }
+    }
+}

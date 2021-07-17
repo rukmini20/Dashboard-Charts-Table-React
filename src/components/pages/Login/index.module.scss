@@ -1,0 +1,15 @@
+@import "../../../styles/index.scss";
+
+.background {
+  height: 100vh;
+  padding-top: 100px;
+
+  .card {
+    :global(.MuiCard-root) {
+      width: 600px;
+    }
+    .errorText  {
+      color: $commonRed;
+    }
+  }
+}

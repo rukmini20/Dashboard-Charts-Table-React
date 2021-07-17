@@ -1,0 +1,19 @@
+@import "../../../../../styles/index.scss";
+.background {
+  // padding: 50px 80px;
+  .table {
+  :global(.MuiTableContainer-root)  {
+    height: calc(100vh - 50vh);
+    width: 70%;
+  }
+  .tableCell{
+    :global(.MuiTableCell-root) {
+      background: lightgray;
+
+    }
+  }
+  :global(.MuiTableCell-root) {
+      font-size: 15px;
+    }
+  }
+}
